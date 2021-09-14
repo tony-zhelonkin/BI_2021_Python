@@ -13,4 +13,4 @@ elif oper == "*":
 elif oper == "/":
     print(a / b)
 else:
-    print("Error! Second input should an operation: +, -, * or /")
+    print("Error! Second input should be an operation: +, -, * or /")
