@@ -1,5 +1,6 @@
 print('This is a script for converting celsius and fahrenheit degrees or pounds and kilograms')
 choice = input("Please, write temp for celsius <-> fahrenheit conversion or wgt for lbs <-> kigs conversion ",)
+# the script doesn`t have any checks for non-numeric input
 if choice == "temp":
     start_temp = input("Please, write cel for celsius -> fahrenheit conversion or fahr for vica versa ",)
     temp_to_convert = float(input("Please, enter number to convert ",))
@@ -18,5 +19,5 @@ elif choice == "wgt":
     elif start_wgt == "lbs":
         result = wgt_to_convert / 0.45359237
         print(wgt_to_convert, "lbs equals to ", round(result, 2)," kg")
-elif choice != "temp" or choice != "wgt":
+elif choice != "temp" or choice != "wgt": # should the user disobey instructions an error message will appear
     print("Unknown unit conversion! Please choose temp or wgt")
